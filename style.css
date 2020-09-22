@@ -1,0 +1,23 @@
+body{
+    background-color: #2F3D4C;
+}
+
+img{
+    width:100%;
+}
+
+.navbar-brand{
+    font-family: 'IM Fell DW Pica SC', serif;
+    font-size: 48px;
+}
+
+.banner{
+    z-index: 1;
+    max-width: 100%;
+    height:auto;
+}
+
+.cardbox{
+    padding-top:20px;
+    background-color: #2F3D4C;
+}
