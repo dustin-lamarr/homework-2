@@ -11,4 +11,10 @@ img{
     font-size: 24px;
 }
 
+.btn-primary{
+    background-color:#0072b1;
+}
 
+.btn-secondary{
+    background-color:#bc2a8d;
+}
