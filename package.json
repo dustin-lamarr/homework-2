@@ -1,0 +1,23 @@
+{
+  "name": "homework-2",
+  "version": "1.0.0",
+  "description": "This is a portfolio webpage that can be updated with new projects and experience. It will be used to show employers that I know what I'm doing (when I know what I'm doing).",
+  "main": "index.js",
+  "dependencies": {
+    "bulma": "^0.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dustin-lamarr/homework-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dustin-lamarr/homework-2/issues"
+  },
+  "homepage": "https://github.com/dustin-lamarr/homework-2#readme"
+}
