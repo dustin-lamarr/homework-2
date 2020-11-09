@@ -36,6 +36,8 @@ gifDiv.appendChild(projectGIF);
 
 liveSite.setAttribute("href", "https://dustin-lamarr.github.io/homework-3/");
 liveSite.textContent = "Live Site"
+repoLink.setAttribute("href", "https://github.com/dustin-lamarr/homework-3");
+repoLink.textContent = "GitHub Repo";
 });
 
 // populate modal with code quiz project info
@@ -48,6 +50,11 @@ codequizInfo.addEventListener("click", function(){
     projectGIF.setAttribute("src", "./Assets/codequiz.gif");
     projectGIF.setAttribute("class", "is-fullwidth");
     gifDiv.appendChild(projectGIF);
+
+    liveSite.setAttribute("href", "https://dustin-lamarr.github.io/homework-4/");
+liveSite.textContent = "Live Site"
+repoLink.setAttribute("href", "https://github.com/dustin-lamarr/homework-4");
+repoLink.textContent = "GitHub Repo";
     });
 
     // populate modal with day planner project info
@@ -62,6 +69,11 @@ dayplannerInfo.addEventListener("click", function(){
     gifDiv.appendChild(projectGIF);
     });    
 
+    liveSite.setAttribute("href", "https://dustin-lamarr.github.io/homework-5/");
+    liveSite.textContent = "Live Site"
+    repoLink.setAttribute("href", "https://github.com/dustin-lamarr/homework-5");
+    repoLink.textContent = "GitHub Repo";
+
    // populate modal with weather project info
    weatherdadInfo.addEventListener("click", function(){
     openModal();
@@ -74,6 +86,11 @@ dayplannerInfo.addEventListener("click", function(){
     gifDiv.appendChild(projectGIF);
     });    
 
+    liveSite.setAttribute("href", "https://dustin-lamarr.github.io/homework-6/");
+    liveSite.textContent = "Live Site"
+    repoLink.setAttribute("href", "https://github.com/dustin-lamarr/homework-6");
+    repoLink.textContent = "GitHub Repo";
+
       // populate modal with binger project info
    bingerInfo.addEventListener("click", function(){
     openModal();
@@ -85,6 +102,11 @@ dayplannerInfo.addEventListener("click", function(){
     projectGIF.setAttribute("class", "is-fullwidth");
     gifDiv.appendChild(projectGIF);
     }); 
+
+    liveSite.setAttribute("href", "https://twmwayne.github.io/project1/");
+    liveSite.textContent = "Live Site"
+    repoLink.setAttribute("href", "https://github.com/Twmwayne/project1");
+    repoLink.textContent = "GitHub Repo";
 
 modalX.addEventListener("click", function(){
 closeModal();
