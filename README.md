@@ -16,7 +16,7 @@ Passing
 ## Tech/framework used
 HTML
 CSS
-Bulma
+Bulma 
 JavaScript
 JQuery
 Node.JS
