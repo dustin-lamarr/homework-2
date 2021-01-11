@@ -4,7 +4,9 @@
   "description": "This is a portfolio webpage that can be updated with new projects and experience. It will be used to show employers that I know what I'm doing (when I know what I'm doing).",
   "main": "index.js",
   "dependencies": {
-    "bulma": "^0.9.1"
+    "bulma": "^0.9.1",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
   },
   "devDependencies": {},
   "scripts": {
