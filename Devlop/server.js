@@ -7,11 +7,13 @@ const PORT = process.env.PORT || 5001;
 
 var dir = path.join(__dirname, 'public');
 
-app.set('views', path.join(__dirname, 'views'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static(dir));
+app.set('views', path.join(__dirname, 'views'));
+
 app.use(routes);
 
-sequelize.sync({ force: false }).then(() => {
-    app.listen(PORT, () => 
-    console.log(`Now listening on port ${PORT}`));
-});
+
+app.listen(PORT, () => 
+console.log(`Now listening on port ${PORT}`));

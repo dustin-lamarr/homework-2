@@ -1,25 +1,29 @@
 {
-  "name": "homework-2",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "This is a portfolio webpage that can be updated with new projects and experience. It will be used to show employers that I know what I'm doing (when I know what I'm doing).",
-  "main": "index.js",
+  "description": "This is a constantly updated project to display my developer work to potential employers.",
+  "main": "server.js",
   "dependencies": {
-    "bulma": "^0.9.1",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "uikit": "^3.6.10"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dustin-lamarr/homework-2.git"
+    "url": "git+https://github.com/dustin-lamarr/portfolio.git"
   },
-  "author": "",
+  "author": "Dustin LaMarr",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dustin-lamarr/homework-2/issues"
+    "url": "https://github.com/dustin-lamarr/portfolio/issues"
   },
-  "homepage": "https://github.com/dustin-lamarr/homework-2#readme"
+  "homepage": "https://github.com/dustin-lamarr/portfolio#readme"
 }
