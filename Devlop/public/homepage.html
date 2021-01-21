@@ -6,12 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
 </head>
 
-<body class="uk-background-secondary">
-    <nav class="uk-navbar-container uk-margin uk-navbar-dark uk-dark" uk-navbar>
+<body id="body-bg">
+    <nav class="uk-navbar-container uk-margin uk-navbar-secondary uk-dark" uk-navbar>
         <div class="uk-navbar-center">
             <div class="uk-navbar-center-left">
                 <div>
@@ -33,8 +34,8 @@
                     </ul>
                 </div>
             </div>
-            <a class="uk-navbar-item uk-logo" href="#"><img data-src="./images/deez.png" width="60" height="60" alt=""
-                    uk-img></a>
+            <div><a class="uk-navbar-item uk-logo" href="#"><img data-src="./images/deez.png" width="60" height="60"
+                        alt="" uk-img></a></div>
             <div class="uk-navbar-center-right">
                 <div>
                     <ul class="uk-navbar-nav">
@@ -46,61 +47,59 @@
         </div>
     </nav>
 
-    <div class="uk-container uk-background-muted uk-margin-bottom uk-padding-large">
-            <div class="uk-grid-large uk-child-width-expand@s uk-padding-top uk-padding-bottom" uk-grid>
-                <div class="uk-card-large uk-card-body uk-card-dark uk-margin-small-right uk-border-rounded uk-box-shadow-large uk-padding-large uk-padding-left-medium">
-                        <h3 class="uk-card-title uk-text-danger uk-text-light">Projects</h3>
-                        <p class="uk-text-muted">A sample of projects I've completed.</p>
-                    <div class="uk-card-media-bottom" tabindex="-1" uk-slideshow>
-                        <ul class="uk-slideshow-items">
-                            <li>
-                        <img src="images/binger.png" alt="">
-                    </li>
-                    <li>
-                        <img src="images/weather-dad.png" alt="" uk-cover>
-                    </li>
-                    <li>
-                        <img src="images/day-planner.png" alt="" uk-cover>
-                    </li>
-                </ul>
+    <div class="uk-container uk-margin-bottom uk-padding-large">
+        <div class="uk-grid-large uk-child-width-expand@s uk-padding-top uk-padding-bottom" uk-grid>
+
+            <div class="uk-card-large uk-margin-small-right uk-padding-remove-left uk-box-shadow-large" id="">
+                <div class="uk-card-body uk-padding-remove" id="card-body">
+                    <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+                        data-src="images/code.png" id="card-body" uk-img>
                     </div>
                 </div>
-                <div class="uk-card-large uk-card-body uk-light uk-card-dark uk-card-hover uk-padding uk-margin-small-left uk-margin-small-right">
-                    <h3 class="uk-card-title uk-dark">Resume</h3>
-                    <p>A sample of projects I've completed.</p>
-                <div class="uk-card-media-bottom" tabindex="-1" uk-slideshow>
-                    <ul class="uk-slideshow-items">
-                        <li>
-                    <img src="images/binger.png" alt="">
-                </li>
-                <li>
-                    <img src="images/weather-dad.png" alt="" uk-cover>
-                </li>
-                <li>
-                    <img src="images/day-planner.png" alt="" uk-cover>
-                </li>
-            </ul>
+                <div class="uk-card-footer" id="card-footer">
+                    <h3 class="uk-card-title uk-heading-divider" id="card-h3">Projects.</h3>
                 </div>
             </div>
-            <div class="uk-card-large uk-card-body uk-light uk-card-dark uk-card-hover uk-padding uk-margin-small-left">
-                <h3 class="uk-card-title uk-dark">About Me</h3>
-                <p>A sample of projects I've completed.</p>
-            <div class="uk-card-media-bottom" tabindex="-1" uk-slideshow>
-                <ul class="uk-slideshow-items">
-                    <li>
-                <img src="images/binger.png" alt="">
-            </li>
-            <li>
-                <img src="images/dark.jpg" alt="" uk-cover>
-            </li>
-            <li>
-                <img src="images/light.jpg" alt="" uk-cover>
-            </li>
-        </ul>
+
+            <div class="uk-card-large uk-margin-small-left uk-margin-small-right uk-box-shadow-large uk-padding-remove-left">
+                <div class="uk-card-body uk-padding-remove uk-border-rounded">
+                    <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-top-center uk-background-cover uk-light uk-border-rounded"
+                        data-src="images/cv.png" id="card-body" uk-img>
+
+                    </div>
+                </div>
+                <div class="uk-card-footer uk-border-rounded" id="card-footer">
+                    <h3 class="uk-card-title uk-heading-divider" id="card-h3">Resume.</h3>
+                </div>
+            </div>
+
+            <div
+                class="uk-card-large uk-margin-small-left uk-margin-small-right uk-border-rounded uk-box-shadow-large uk-padding-remove-left">
+
+                <div class="uk-card-body uk-padding-remove uk-border-rounded">
+                    <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-blend-difference uk-background-primary uk-background-top-center uk-background-cover uk-light uk-border-rounded"
+                        data-src="images/slam_poetry.jpg" id="card-body" uk-img>
+                    </div>
+                </div>
+                <div class="uk-card-footer uk-border-rounded" id="card-footer">
+                    <h3 class="uk-card-title uk-heading-divider" id="card-h3">Writing.</h3>
+                </div>
+            </div>
+            <div
+                class="uk-card-large uk-margin-small-left uk-border-rounded uk-box-shadow-large uk-padding-remove-left">
+
+                <div class="uk-card-body uk-padding-remove uk-border-rounded">
+                    <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-border-rounded"
+                        data-src="images/me.png" id="card-body" uk-img>
+
+                    </div>
+                </div>
+                <div class="uk-card-footer uk-border-rounded" id="card-footer">
+                    <h3 class="uk-card-title uk-heading-divider" id="card-h3">About me.</h3>
+                </div>
             </div>
         </div>
-            </div>
-        
+
     </div>
 
     <script src="uikit/dist/js/uikit-icons.min.js"></script>

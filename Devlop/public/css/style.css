@@ -1,0 +1,23 @@
+#card-sub-head {
+    color:azure;
+}
+
+#body-bg {
+    background-color: #336699;
+}
+
+#card-body {
+    border-radius: 10px 10px 0px 0px;
+}
+#card-h3 {
+    color: azure;
+}
+
+#card-footer {
+    background-color: #132639 ;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#card-shadow {
+    box-shadow: 10px 10px 5px grey;
+}
