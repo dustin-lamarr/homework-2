@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap" rel="stylesheet">
+
+  <title>Everything you didn't want to know about Dustin LaMarr</title>
+</head>
+
+<body class="body">
+
+  <section class="section">
+    <div class="container">
+      <nav class="level">
+        <div class="level-left">
+        <p class="level-item has-text-left">
+          <img src="./images/deez.png" alt="" style="height: 80px;">
+        </p>
+        <p class="level-item has-text-left">
+          <a class="link is-info pr-4 has-text-danger-dark" href="https://www.dropbox.com/s/n0bnq1trg0j8oop/DL-Dev.pdf?dl=0">Resume</a>
+        </p>
+      
+        <p class="level-item has-text-left">
+          <a class="link is-info has-text-danger-dark" href="" >About Me</a>
+        </p>
+      </div>
+      <div class="level-right">
+        <p class="level-item has-text-left">
+          <a class="link is-info has-text-danger-dark" href="https://github.com/dustin-lamarr">GitHub</a>
+        </p>
+        <p class="level-item has-text-left">
+          <a class="link is-info pl-4 has-text-danger-dark" href="https://www.linkedin.com/in/dustinlamarr/">LinkedIn</a>
+        </p>
+      </div>
+      </nav>
+
+      <div class="container">
+        <div class="columns">
+
+          <div class="column is-half has-background-primary-dark">
+            <article class="tile is-parent is-vcentered has-background-primary-dark">
+              <div class="columns box is-centered has-background-primary-light">
+                <div class="box">
+                  <div class="column is-vcentered">
+                    <p class="title has-text-danger-dark has-text-centered">P4s$g3N</p>
+                  </div>
+                  <div class="column is-vcentered">
+                    <img src="./Assets/password-gen.png">
+                    <div class="buttons is-centered">
+                      <button class="button is-primary is-light is-centered has-text-danger-dark" id="passgen-info">Get Info</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="column is-half has-background-primary-dark">
+            <article class="tile is-parent is-vcentered has-background-primary-dark">
+              <div class="columns box is-centered has-background-primary-light">
+                <div class="box">
+                  <div class="column is-vcentered">
+                    <p class="title has-text-danger-dark has-text-centered">Code Quiz</p>
+                  </div>
+                  <div class="column is-vcentered">
+                    <img src="./Assets/code-quiz.png">
+                    <div class="buttons is-centered">
+                      <button class="button is-primary is-light is-centered has-text-danger-dark" id="codequiz-info">Get Info</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="columns">
+
+          <div class="column is-half has-background-primary-dark">
+            <article class="tile notification is-vcentered has-background-primary-dark">
+              <div class="columns box is-centered has-background-primary-light">
+                <div class="box">
+                  <div class="column is-vcentered">
+                    <p class="title has-text-danger-dark has-text-centered">Day Planner: Plan Your Day</p>
+                  </div>
+                  <div class="column is-vcentered">
+                    <img src="./Assets/day-planner.png">
+                    <div class="buttons is-centered">
+                      <button class="button is-primary is-light is-centered has-text-danger-dark" id="dayplanner-info">Get Info</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="column is-half has-background-primary-dark">
+
+            <article class=" column tile notification is-vcentered has-background-primary-dark">
+              <div class="columns box is-centered has-background-primary-light">
+                <div class="box">
+                  <div class="column is-vcentered">
+                    <p class="title has-text-danger-dark has-text-centered">Weather Dad</p>
+                  </div>
+                  <div class="column is-vcentered">
+                    <img src="./Assets/weather-dad.png">
+                    <div class="buttons is-centered">
+                      <button class="button is-primary is-light is-centered has-text-danger-dark" id="weatherdad-info">Get Info</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column has-background-primary-dark">
+            <article class="tile notification is-vcentered has-background-primary-dark">
+              <div class="columns box is-centered has-background-primary-light">
+                <div class="box">
+                  <div class="column is-vcentered">
+                    <p class="title has-text-danger-dark has-text-centered">Binger</p>
+                  </div>
+                  <div class="column is-vcentered">
+                    <img src="./Assets/binger.png">
+                    <div class="buttons is-centered">
+                      <button class="button is-primary is-light is-centered has-text-danger-dark" id="binger-info">Get Info</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="modal" id="modal">
+    <div class="modal-background">
+      <div class="modal-content">
+        <div class="modal-card box">
+          <header class="level">
+            <p class="modal-card-title level-item" id="modal-title"></p>
+            <div class="level-right">
+              <button class="delete level-item" aria-label="close"></button>
+            </div>
+          </header>
+          <section class="modal-card-body" style="border:gray; border-width: 2px;">
+            <div class="columns">
+              <div class="column is-full block has-text-primary-dark" id="project-info"></div>
+            </div>
+            <div class="columns">
+              <div class="column is-full" id="project-gif"></div>
+            </div>
+            <div class="columns">
+              <div class="column is-centered"><a id="live-site" class="has-text-danger-dark"></a></div>
+            </div>
+            <div class="columns">
+              <div class="column is-full"><a id="repo-link" class="has-text-danger-dark"></a></div>
+            </div>
+          </section>
+          <footer class="level">
+            <div class="level-right">
+              <button class="button level-item" id="cancel-button">Close</button>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
