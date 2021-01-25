@@ -12,7 +12,7 @@
 </head>
 
 <body id="body-bg">
-    <nav class="uk-navbar-container uk-margin uk-navbar-secondary uk-dark" uk-navbar>
+    <nav class="uk-navbar-container uk-margin uk-light" id="nav-bg" uk-navbar>
         <div class="uk-navbar-center">
             <div class="uk-navbar-center-left">
                 <div>
@@ -47,7 +47,9 @@
         </div>
     </nav>
 
-    <div class="uk-container uk-margin-bottom uk-padding-large">
+    <!-- Cards -->
+
+    <div class="uk-container uk-margin-bottom uk-padding-large" uk-height-viewport>
         <div class="uk-grid-large uk-child-width-expand@s uk-padding-top uk-padding-bottom" uk-grid>
 
             <div class="uk-card-large uk-margin-small-right uk-padding-remove-left uk-box-shadow-large" id="">
@@ -57,11 +59,14 @@
                     </div>
                 </div>
                 <div class="uk-card-footer" id="card-footer">
-                    <h3 class="uk-card-title uk-heading-divider" id="card-h3">Projects.</h3>
+                    <a href="#projects-modal" uk-toggle>
+                        <h3 class="uk-card-title uk-heading-divider" id="card-h3">Projects.</h3>
+                    </a>
                 </div>
             </div>
 
-            <div class="uk-card-large uk-margin-small-left uk-margin-small-right uk-box-shadow-large uk-padding-remove-left">
+            <div
+                class="uk-card-large uk-margin-small-left uk-margin-small-right uk-box-shadow-large uk-padding-remove-left">
                 <div class="uk-card-body uk-padding-remove uk-border-rounded">
                     <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-top-center uk-background-cover uk-light uk-border-rounded"
                         data-src="images/cv.png" id="card-body" uk-img>
@@ -69,7 +74,9 @@
                     </div>
                 </div>
                 <div class="uk-card-footer uk-border-rounded" id="card-footer">
-                    <h3 class="uk-card-title uk-heading-divider" id="card-h3">Resume.</h3>
+                    <a href="#resume-modal" uk-toggle>
+                        <h3 class="uk-card-title uk-heading-divider" id="card-h3">Resume.</h3>
+                    </a>
                 </div>
             </div>
 
@@ -82,12 +89,13 @@
                     </div>
                 </div>
                 <div class="uk-card-footer uk-border-rounded" id="card-footer">
-                    <h3 class="uk-card-title uk-heading-divider" id="card-h3">Writing.</h3>
+                    <a href="#writing-modal" uk-toggle>
+                        <h3 class="uk-card-title uk-heading-divider" id="card-h3">Writing.</h3>
+                    </a>
                 </div>
             </div>
             <div
                 class="uk-card-large uk-margin-small-left uk-border-rounded uk-box-shadow-large uk-padding-remove-left">
-
                 <div class="uk-card-body uk-padding-remove uk-border-rounded">
                     <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-border-rounded"
                         data-src="images/me.png" id="card-body" uk-img>
@@ -95,13 +103,127 @@
                     </div>
                 </div>
                 <div class="uk-card-footer uk-border-rounded" id="card-footer">
-                    <h3 class="uk-card-title uk-heading-divider" id="card-h3">About me.</h3>
+                    <a href="#aboutme-modal" uk-toggle>
+                        <h3 class="uk-card-title uk-heading-divider" id="card-h3">About me.</h3>
+                    </a>
                 </div>
             </div>
         </div>
-
     </div>
 
+    <!-- Modals -->
+    <div id="projects-modal" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-border-rounded uk-width-2xlarge uk-background-muted">
+            <h2 class="uk-modal-title"><span class="">Projects</span></h2>
+            <hr>
+            <p>Some projects I've completed.</p>
+            <div class="uk-slider-container-offset" uk-slider="center: true">
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                    <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="images/bobbyfirmino.png" alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">bobbyfirmino.com</h3>
+                                    <p>bobbyfirmino.com is a gif repository and promotional
+                                        website in affiliation with LFC Utah, a Liverpool FC supporter's club.</p>
+                                        <hr>
+                                        <a href="https://github.com/dustin-lamarr/bobbyfirmino" uk-icon="code"></a>
+                                        <hr>
+
+                                        <ul class="uk-list-circle">
+                                            <li><span uk-icon="icon: code"></span>Javascript</li>
+                                            <li>Node.JS</li>
+                                            <li>MySQL</li>
+                                            <li>MySQL</li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="images/ecommerce.png" alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">E-Commerce Backend</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="images/tech-blog.png" alt="">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title">Tech Blog</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            
+                </div>
+            
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+            
+            </div>
+            <!-- <div uk-slideshow="animation: push">
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                    <ul class="uk-slideshow-items">
+                        <li>
+                            <div class="uk-inline">
+                                <img data-src="images/bobbyfirmino.png" width="100%" height="" alt="" uk-img>
+                                <div class="uk-overlay uk-overlay-default uk-position-bottom">
+                                    <p class="" id="overlay-text">bobbyfirmino.com is a gif repository and promotional
+                                        website in affiliation with LFC Utah, a Liverpool FC supporter's club.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img data-src="images/ecommerce.png" alt="" width="100%" height="" alt="" uk-img>
+                        </li>
+                        <li>
+                            <img data-src="images/tech-blog.png" alt="" width="100%" height="" alt="" uk-img>
+                        </li>
+                    </ul>
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                        uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                        uk-slideshow-item="next"></a>
+                </div>
+                <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+            </div>
+        </div>
+    </div> -->
+
+    <div id="resume-modal" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-border-rounded">
+            <h2 class="uk-modal-title"><span class="">Resume</span></h2>
+            <hr>
+            <p>My developer cv.</p>
+            <div>
+                <iframe src="images/dl-dev.pdf#toolbar=0" width="100%" height="700px">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <div id="writing-modal" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-border-rounded">
+            <h2 class="uk-modal-title"><span class="">Writing</span></h2>
+            <hr>
+            <p>These are my words.</p>
+            
+        </div>
+        </div>
     <script src="uikit/dist/js/uikit-icons.min.js"></script>
 </body>
 
